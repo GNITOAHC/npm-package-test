@@ -1,11 +1,17 @@
 {
-  "name": "package-test",
+  "name": "@gnitoahc/npm-package-test",
+  "private": false,
+  "main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite build && tsc"
+    "build": "vite build"
   },
   "author": "GINTOAHC",
   "license": "ISC",
@@ -18,7 +24,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.0.4",
-    "vite": "^5.0.11"
+    "vite": "^5.0.11",
+    "vite-plugin-dts": "^3.7.0"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
@@ -27,5 +34,8 @@
     "lucide-react": "^0.305.0",
     "tailwind-merge": "^2.2.0",
     "tailwindcss-animate": "^1.0.7"
+  },
+  "publishConfig": {
+    "@gnitoahc:registry": "https://npm.pkg.github.com"
   }
 }
