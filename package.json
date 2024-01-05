@@ -7,11 +7,11 @@
   "files": [
     "dist"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite build"
+    "build": "npx tsc && vite build"
   },
   "author": "GINTOAHC",
   "license": "ISC",
@@ -28,6 +28,8 @@
     "vite-plugin-dts": "^3.7.0"
   },
   "dependencies": {
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
+    "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
